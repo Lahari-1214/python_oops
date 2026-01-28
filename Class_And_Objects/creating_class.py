@@ -14,3 +14,8 @@ class Student:
         print("Hii myname is:", self.name)  
         print("My age is:", self.age) 
         print("My score:", self.marks) 
+
+''' Writing a class like this is not sufficient.  
+It should be used. To use a class, we should create an instance (or object) to the  
+class. Instance creation represents allotting memory necessary to store the actual data  
+of the variables i.e in object_creation.py file '''
