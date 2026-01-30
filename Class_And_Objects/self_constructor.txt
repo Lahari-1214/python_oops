@@ -1,0 +1,17 @@
+SELF:
+self is a default variable that contains the memory address of the instance of the current class
+
+'''s1 = Student() : ‘s1’ contains the memory address of the instance. This memory address is 
+internally and by default passed to ‘self’ variable. Since ‘self’ knows the memory address 
+of the instance, it can refer to all the members of the instance'''
+
+# we can use self in 2 ways:
+1.The ‘self’ variable is used as first parameter in the constructor as: 
+    def __init__(self): 
+
+2.‘self’ can be used as first parameter in the instance methods as: 
+    def talk(self):
+
+
+CONSTRUCTURE:
+A constructor is a special method that is used to initialize the instance variables of a class.
