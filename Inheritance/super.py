@@ -29,3 +29,26 @@ class Son(Father):
 # create sub class instance and display father's property 
 s = Son(200000.00, 800000.00) 
 s.display_property() 
+
+
+# few more additional examples of super() method
+# Accessing base class constructor and method in the sub class 
+class Square: 
+    def __init__(self, x): 
+        self.x = x 
+ 
+    def area(self): 
+        print('Area of square= ', self.x*self.x) 
+ 
+class Rectangle(Square): 
+    def __init__(self, x, y): 
+        super().__init__(x) 
+        self.y = y 
+
+    def area(self): 
+        super().area() 
+        print('Area of rectangle= ', self.x*self.y) 
+# find areas of square and rectangle 
+a, b = [float(x) for x in input("Enter two measurements: ").split()] 
+r = Rectangle(a,b) 
+r.area() 
