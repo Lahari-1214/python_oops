@@ -47,4 +47,40 @@ c.color()
 # problems of using multiple inheritance: all the constructors of super class doesn't available to the sub class for the purpose we have Method Resolution order (MRO) which is described in MRO.py
 
 
+# Multilevel Inheritance:A class inherits from another derived class.
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(B):
+    pass
+
+
+# Hierarchical Inheritance: Multiple child classes inherit from one parent class.
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+# Hybrid Inheritance:Combination of two or more types of inheritance.
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+
+class D(B, C):
+    pass
+
+
+
 
